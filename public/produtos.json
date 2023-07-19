@@ -1,0 +1,189 @@
+{
+"products": 
+    [
+        {
+            "id": 1,
+            "category": "Audio",
+            "brand": "Apple",
+            "productName": "Airpods 3",
+            "photo": "",
+            "price": 1.799
+        },
+        {
+            "id": 2,
+            "category": "Smartwatch",
+            "brand": " Apple",
+            "productName": "Apple Watch SE",
+            "photo": " ...",
+            "price": 3.729
+        },
+        {
+            "id": 3,
+            "category": "Smartwatch",
+            "brand": " Samsung",
+            "productName": "Galaxy Watch 5 BT 44mm",
+            "photo": " ...",
+            "price": 1.099
+        },
+        {
+            "id": 4,
+            "category": "Smartphone",
+            "brand": "Apple",
+            "productName": "iPhone 12",
+            "photo": " ...",
+            "price": 3.899
+        },
+        {
+            "id": 5,
+            "category": "Smartphone",
+            "brand": "Apple",
+            "productName": "iPhone 12 Pro Max",
+            "photo": " ...",
+            "price": 6.299
+        },
+        {
+            "id": 6,
+            "category": "Smartphone",
+            "brand": "Apple",
+            "productName": "iPhone 13",
+            "photo": " ...",
+            "price": 4.199
+        },
+        {
+            "id": 7,
+            "category": "Smartphone",
+            "brand": "Apple",
+            "productName": "Apple iPhone 13 Pro Max",
+            "photo": " ...",
+            "price": 7.469
+        },
+        {
+            "id": 8,
+            "category": "Smartphone",
+            "brand": "Apple",
+            "productName": "Apple iPhone 13 Pro Max",
+            "photo": " ...",
+            "price": 7.469
+        },
+        {
+            "id": 9,
+            "category": "Smartphone",
+            "brand": "Apple",
+            "productName": "iPhone 14",
+            "photo": " ...",
+            "price": 4.999
+        },
+        {
+            "id": 10,
+            "category": "Smartphone",
+            "brand": "Apple",
+            "productName": "iPhone 14 Pro Max",
+            "photo": " ...",
+            "price": 7.699
+        },
+        {
+            "id": 11,
+            "category": "Smartphone",
+            "brand": "Apple",
+            "productName": "iPhone 14 Pro Max",
+            "photo": " ...",
+            "price": 7.699
+        },
+        {
+            "id": 12,
+            "category": "Audio",
+            "brand": "JBL",
+            "productName": "JBL Charge 5",
+            "photo": " ...",
+            "price": 1.099
+        },
+        {
+            "id": 13,
+            "category": "Notbook",
+            "brand": "Lenovo",
+            "productName": "Lenovo IdeaPad 3i",
+            "photo": " ...",
+            "price": 1.099
+        },
+        {
+            "id": 14,
+            "category": "Notbook",
+            "brand": "Lenovo",
+            "productName": "Notebook Gamer Lenovo Gaming3i",
+            "photo": " ...",
+            "price": 3.599
+        },
+        {
+            "id": 15,
+            "category": "Notbook",
+            "brand": "Apple",
+            "productName": "MacBook Air 13",
+            "photo": " ...",
+            "price": 9.999
+        },
+        {
+            "id": 16,
+            "category": "Notbook",
+            "brand": "Apple",
+            "productName": "MacBook Pro 13",
+            "photo": " ...",
+            "price": 14.699
+        },
+        {
+            "id": 17,
+            "category": "Game",
+            "brand": "Nintendo",
+            "productName": "Nintendo Switch",
+            "photo": " ...",
+            "price": 1.999
+        },
+        {
+            "id": 18,
+            "category": "Notbook",
+            "brand": "Dell",
+            "productName": "Dell Inspiron 15 i1101-M60S",
+            "photo": " ...",
+            "price": 4.928
+        },
+        {
+            "id": 19,
+            "category": "Game",
+            "brand": "Sony",
+            "productName": "Playstation 5",
+            "photo": " ...",
+            "price": 4.142
+        },
+        {
+            "id": 20,
+            "category": "Notbook",
+            "brand": "Samsung",
+            "productName": "Samsung Book",
+            "photo": " ...",
+            "price": 2.799
+        },
+        {
+            "id": 21,
+            "category": "Notbook",
+            "brand": "Samsung",
+            "productName": "Samsung Galaxy Book3 360",
+            "photo": " ...",
+            "price": 5.999
+        },
+        {
+            "id": 22,
+            "category": "Notbook",
+            "brand": "VAIO®",
+            "productName": "VAIO® FE15",
+            "photo": " ...",
+            "price": 2.897
+        },
+        {
+            "id": 23,
+            "category": "Notbook",
+            "brand": "VAIO",
+            "productName": "VAIO® FE15 AMD",
+            "photo": " ...",
+            "price": 4.047
+        }
+    ]
+}
