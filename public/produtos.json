@@ -6,7 +6,7 @@
             "category": "Audio",
             "brand": "Apple",
             "productName": "Airpods 3",
-            "photo": "",
+            "photo": "https://elenex.vercel.app/images/Airpods-3.png",
             "price": 1.799
         },
         {
@@ -14,7 +14,7 @@
             "category": "Smartwatch",
             "brand": " Apple",
             "productName": "Apple Watch SE",
-            "photo": " ...",
+            "photo": "https://elenex.vercel.app/images/Apple-Watch-se-2.png",
             "price": 3.729
         },
         {
@@ -22,7 +22,7 @@
             "category": "Smartwatch",
             "brand": " Samsung",
             "productName": "Galaxy Watch 5 BT 44mm",
-            "photo": " ...",
+            "photo": "https://elenex.vercel.app/images/Galaxy-watch-5-bt-44mm.png",
             "price": 1.099
         },
         {
@@ -30,7 +30,7 @@
             "category": "Smartphone",
             "brand": "Apple",
             "productName": "iPhone 12",
-            "photo": " ...",
+            "photo": "https://elenex.vercel.app/images/iPhone-12.png",
             "price": 3.899
         },
         {
@@ -38,7 +38,7 @@
             "category": "Smartphone",
             "brand": "Apple",
             "productName": "iPhone 12 Pro Max",
-            "photo": " ...",
+            "photo": "https://elenex.vercel.app/images/iPhone-12-PRO-MAX.png",
             "price": 6.299
         },
         {
@@ -46,7 +46,7 @@
             "category": "Smartphone",
             "brand": "Apple",
             "productName": "iPhone 13",
-            "photo": " ...",
+            "photo": "https://elenex.vercel.app/images/iPhone-13.png",
             "price": 4.199
         },
         {
@@ -62,7 +62,7 @@
             "category": "Smartphone",
             "brand": "Apple",
             "productName": "Apple iPhone 13 Pro Max",
-            "photo": " ...",
+            "photo": "https://elenex.vercel.app/images/iPhone-13-PRO-MAX.png",
             "price": 7.469
         },
         {
@@ -70,7 +70,7 @@
             "category": "Smartphone",
             "brand": "Apple",
             "productName": "iPhone 14",
-            "photo": " ...",
+            "photo": "https://elenex.vercel.app/images/iPhone-14.png",
             "price": 4.999
         },
         {
@@ -78,7 +78,7 @@
             "category": "Smartphone",
             "brand": "Apple",
             "productName": "iPhone 14 Pro Max",
-            "photo": " ...",
+            "photo": "https://elenex.vercel.app/images/iPhone-14-PRO-MAX.png",
             "price": 7.699
         },
         {
@@ -94,7 +94,7 @@
             "category": "Audio",
             "brand": "JBL",
             "productName": "JBL Charge 5",
-            "photo": " ...",
+            "photo": "https://elenex.vercel.app/images/JBL-Charge-5.png",
             "price": 1.099
         },
         {
@@ -102,7 +102,7 @@
             "category": "Notbook",
             "brand": "Lenovo",
             "productName": "Lenovo IdeaPad 3i",
-            "photo": " ...",
+            "photo": "https://elenex.vercel.app/images/Lenovo-ideapad-3i.png",
             "price": 1.099
         },
         {
@@ -110,7 +110,7 @@
             "category": "Notbook",
             "brand": "Lenovo",
             "productName": "Notebook Gamer Lenovo Gaming3i",
-            "photo": " ...",
+            "photo": "https://elenex.vercel.app/images/Lenovo-ideapad-gaming.png",
             "price": 3.599
         },
         {
@@ -118,7 +118,7 @@
             "category": "Notbook",
             "brand": "Apple",
             "productName": "MacBook Air 13",
-            "photo": " ...",
+            "photo": "https://elenex.vercel.app/images/MacBook-Air-13.png",
             "price": 9.999
         },
         {
@@ -126,7 +126,7 @@
             "category": "Notbook",
             "brand": "Apple",
             "productName": "MacBook Pro 13",
-            "photo": " ...",
+            "photo": "https://elenex.vercel.app/images/MacBook-PRO-14.png",
             "price": 14.699
         },
         {
@@ -134,7 +134,7 @@
             "category": "Game",
             "brand": "Nintendo",
             "productName": "Nintendo Switch",
-            "photo": " ...",
+            "photo": "https://elenex.vercel.app/images/Nitendo-switch-vermelho.png",
             "price": 1.999
         },
         {
@@ -142,7 +142,7 @@
             "category": "Notbook",
             "brand": "Dell",
             "productName": "Dell Inspiron 15 i1101-M60S",
-            "photo": " ...",
+            "photo": "https://elenex.vercel.app/images/Notebook-Dell-Inspiration-353.png",
             "price": 4.928
         },
         {
@@ -150,7 +150,7 @@
             "category": "Game",
             "brand": "Sony",
             "productName": "Playstation 5",
-            "photo": " ...",
+            "photo": "https://elenex.vercel.app/images/Playstation5.png",
             "price": 4.142
         },
         {
@@ -158,7 +158,7 @@
             "category": "Notbook",
             "brand": "Samsung",
             "productName": "Samsung Book",
-            "photo": " ...",
+            "photo": "https://elenex.vercel.app/images/Samsung-BOOK.png",
             "price": 2.799
         },
         {
@@ -166,7 +166,7 @@
             "category": "Notbook",
             "brand": "Samsung",
             "productName": "Samsung Galaxy Book3 360",
-            "photo": " ...",
+            "photo": "https://elenex.vercel.app/images/Samsung-Galaxy-Book3.png",
             "price": 5.999
         },
         {
@@ -174,7 +174,7 @@
             "category": "Notbook",
             "brand": "VAIO®",
             "productName": "VAIO® FE15",
-            "photo": " ...",
+            "photo": "https://elenex.vercel.app/images/Vaio-fe15.png",
             "price": 2.897
         },
         {
@@ -182,7 +182,7 @@
             "category": "Notbook",
             "brand": "VAIO",
             "productName": "VAIO® FE15 AMD",
-            "photo": " ...",
+            "photo": "https://elenex.vercel.app/images/Vaio-fe15-AMD.png",
             "price": 4.047
         }
     ]
