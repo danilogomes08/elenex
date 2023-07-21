@@ -1,25 +1,43 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from './components/Header/Header'
+import Main from './components/Main/Main'
+import Categories from './components/Categories/Categories'
+import Produtos from './components/Produtos/Produtos'
+import Banners from './components/Banners/Banners'
+import Countdown from './components/Countdown/Countdown'
+import Brands from './components/Brands/Brands'
+import Footer from './components/Footer/Footer'
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header />
+      <Main />
+      <Categories />
+      <Produtos 
+        titulo="New Products"
+      />
+      <Banners 
+        titulo1="iPhone" subtitulo1="melhor iphone" 
+        titulo2="Samsung" subtitulo2="melhor Samsung" 
+      />
+      <Produtos 
+        titulo="Apple"
+        banner="./images/banner-central.png"
+      />
+      <Countdown />
+      <Banners 
+        titulo1="iPhone" subtitulo1="melhor iphone" 
+        titulo2="Samsung" subtitulo2="melhor Samsung" 
+      />
+      <Produtos 
+        titulo="Special Products"
+      />
+      <Brands />
+      <Footer />
+
     </div>
-  );
+  )
 }
 
 export default App;
