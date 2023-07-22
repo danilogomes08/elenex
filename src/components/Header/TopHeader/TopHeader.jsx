@@ -1,11 +1,12 @@
 import react from 'react'
 import * as Icon from 'react-feather';
+import './TopHeader.scss'
 
 const TopHeader = _ => {
 
     return(
         <div>
-            <div>
+            <div className="TopHeader">
                 <p>
                     HOTLINE: +01 234 567 890
                 </p>
@@ -15,14 +16,13 @@ const TopHeader = _ => {
                 </p>
 
                 <div>
-                    <Icon.Facebook stroke-width="1.5" />
+                    <Icon.Facebook className="Icon" size="20" stroke-width="1.5" />
 
-                    <Icon.Instagram stroke-width="1.5"/>
+                    <Icon.Instagram className="Icon" size="20" stroke-width="1.5"/>
 
-                    <Icon.Twitter stroke-width="1.5"/>
+                    <Icon.Twitter className="Icon" size="20" stroke-width="1.5"/>
                 </div>
             </div>
-
             <hr />
         </div>
     )
