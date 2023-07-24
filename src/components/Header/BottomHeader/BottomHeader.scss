@@ -1,0 +1,43 @@
+@import '../../../index.scss';
+
+.BottomHeader {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    padding-top: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+    & ul {
+        display: flex;
+        justify-content: space-between
+    }
+    & li a {
+        margin: 0 20px;
+        color: $cinza-escuro;
+        &:hover {
+            color: $azul
+        }
+    }
+}
+
+.MenuCategories {
+    display: flex;
+    align-items: center;
+    padding: 12px 20px;
+    margin-right: 50px;
+    font-size: 1rem;
+    color: $branco;
+    background-color: $azul;
+    border: none;
+    border-radius: 5px 5px 0 0;
+    cursor: pointer;
+    &:hover {
+        background-color: $cinza-escuro;;
+    }
+    & .Icon:first-child {
+        padding-right: 50px;
+    }
+    & .Icon:last-child {
+        padding-left: 50px;
+    }
+}

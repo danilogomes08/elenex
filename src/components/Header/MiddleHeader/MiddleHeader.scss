@@ -1,0 +1,51 @@
+@import '../../../index.scss';
+
+.MiddleHeader {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    align-items: center;
+    flex-wrap: wrap;
+    & .Icon:not(.Icon:last-child, .Icon:first-child) {
+        padding: 0 20px;
+    }
+    & .Icon {
+        color: $azul;
+        &:hover {
+            color: $cinza-escuro;
+        }
+    } 
+}
+
+
+.Pesquisa {
+    width: 600px;
+    align-items: center;
+    display: flex;
+    & input {
+        width: 100%;
+        height: 40px;
+        border-radius: 5px 0 0 5px;
+        border: 1px solid $cinza-claro;
+        background-color: $cinza;
+        outline: none;
+        padding-left: 15px;
+    }
+}
+
+header input::placeholder {
+    font-weight: 500;
+    color: $cinza-escuro;
+    font-size: 1rem;
+}
+
+.Pesquisa button {
+    height: 42px;
+    background-color: $azul;
+    border: 1px solid $azul;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    padding: 0 40px;
+}

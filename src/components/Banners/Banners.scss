@@ -1,0 +1,43 @@
+@import '../../index.scss';
+
+.Banner {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: space-between;
+    color: $cinza-escuro;
+    & div {
+        height: 50vh;
+        width: 580px;
+        text-align: center;
+    }
+    & h2 {
+        font-size: 1.12rem;
+        font-weight: 400;
+        margin: 20px 0 10px 0;
+    }
+}
+
+.Banner01 {
+    background: url(../../../banner01.png) center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.Banner02 {
+    background: url(../../../banner02.png) center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.Banner03 {
+    background: url(../../../banner03.png) center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.Banner04 {
+    background: url(../../../banner04.png) center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}

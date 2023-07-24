@@ -1,14 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
 
+
+$cinza-escuro: #222;
+$cinza-claro: #f1f1f1;
+$cinza: #fbfbfb;
+$azul: #1d4ae9;
+$branco: #fff;
+
 * {
   margin: 0;
   padding: 0;
   font-family: 'Questrial', sans-serif;
   list-style: none;
+  text-decoration: none;
 }
 
 hr {
   border: 0;
   height: 1px;
-  background: #f1f1f1
+  background: $cinza-claro;
 }
+

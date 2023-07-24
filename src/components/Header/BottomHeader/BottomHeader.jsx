@@ -1,18 +1,20 @@
 import react from 'react'
 import * as Icon from 'react-feather';
 
+import './BottomHeader.scss'
+
 const BottomHeader = _ => {
 
     return(
 
         <div>
             
-            <div>
+            <div className="BottomHeader">
 
-                <button>
-                    <Icon.Menu stroke-width="1.5" />
-                    Categories
-                    <Icon.ChevronDown stroke-width="1.5" />
+                <button className="MenuCategories">
+                    <Icon.Menu className="Icon" stroke-width="1.5" />
+                        Categories
+                    <Icon.ChevronDown className="Icon" stroke-width="1.5" />
                 </button>
 
                 <ul>

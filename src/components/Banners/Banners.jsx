@@ -1,9 +1,10 @@
 import react from 'react'
+import './Banners.scss'
 
 const Banners = props => {
 
     return (
-        <section>
+        <section className="Banner">
             <div className={props.bg1}>
                 <h2>{props.titulo1}</h2>
                 <p>{props.subtitulo1} </p>

@@ -1,18 +1,22 @@
+@import '../../../index.scss';
+
 .TopHeader {
     padding: 10px 0;
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
     font-size: 14px;
+    color: $cinza-escuro;
     & p:nth-child(2) {
-        color: #1d4ae9
+        color: $azul;
     }
     & .Icon:not(.Icon:last-child, .Icon:first-child) {
        padding: 0 10px;
     }
     & .Icon:hover {
-        color: blue
+        color: $azul;
     }
 }

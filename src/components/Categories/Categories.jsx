@@ -12,30 +12,32 @@ const Categories = _ => {
             <div>
 
                 <div className="Category">
-                    <img src="./images/iPhone-13-PRO-MAX.png" />
+                    <img src="./images/category01.png" />
                     <h3> Smartphones </h3>
                 </div>
 
                 <div className="Category">
-                    <img src="./images/Apple-Watch-se-2.png" />
-                    <h3> Smartphones </h3>
+                    <img src="./images/category02.png" />
+                    <h3> Gamer </h3>
                 </div>
 
                 <div className="Category">
-                    <img src="./images/Airpods-3.png" />
-                    <h3> Smartphones </h3>
+                    <img src="./images/category03.png" />
+                    <h3> Smartwatch </h3>
+                </div>
+
+            </div>
+
+            <div>
+                <div className="Category">
+                    <img src="./images/category04.png" />
+                    <h3> Audio </h3>
                 </div>
 
                 <div className="Category">
-                    <img src="./images/Playstation5.png" />
-                    <h3> Smartphones </h3>
+                    <img src="./images/category05.png" />
+                    <h3> Notbook </h3>
                 </div>
-
-                <div className="Category">
-                    <img src="./images/MacBook-PRO-14.png" />
-                    <h3> Smartphones </h3>
-                </div>
-
             </div>
 
             <hr />
