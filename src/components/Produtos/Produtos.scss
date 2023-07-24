@@ -1,0 +1,53 @@
+@import '../../index.scss';
+
+.ProdutosContainer {
+    padding-top: 20px
+}
+
+.Produtos {
+    display: flex;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: space-between;
+    text-align: center;
+    align-items: baseline;
+    & h2 {
+       text-align: center; 
+    }
+}
+
+.ItemProducts {
+    max-width: 250px;
+    align-items: baseline;
+    margin-bottom: 50px;
+    & p:nth-child(odd) {
+        margin: 5px 0
+    }
+    & img {
+        width: 250px;
+        margin: 20px 0;
+    }
+    & h3 {
+        color: $azul;
+        font-weight: 400;
+    }
+    & button {
+        padding: 10px 25px;
+        background-color: $azul;
+        color: $branco;
+        border: none;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        margin: 5px auto 0 auto;
+        font-size: 1rem;
+        cursor: pointer;
+        &:hover {
+            background-color: $cinza-escuro
+        } 
+        & .Icon {
+            margin-right: 10px;
+        }
+    }
+}
