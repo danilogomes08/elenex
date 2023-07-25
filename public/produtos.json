@@ -20,7 +20,7 @@
         {
             "id": 3,
             "category": "Smartwatch",
-            "brand": " Samsung",
+            "brand": "Samsung",
             "productName": "Galaxy Watch 5 BT 44mm",
             "photo": "https://elenex.vercel.app/images/Galaxy-watch-5-bt-44mm.png",
             "price": 1.099
@@ -53,7 +53,7 @@
             "id": 7,
             "category": "Smartphone",
             "brand": "Apple",
-            "productName": "Apple iPhone 13 Pro Max",
+            "productName": "iPhone 13 Pro Max",
             "photo": "https://elenex.vercel.app/images/iPhone-13-PRO-MAX.png",
             "price": 7.469
         },
@@ -93,7 +93,7 @@
             "id": 12,
             "category": "Notbook",
             "brand": "Lenovo",
-            "productName": "Notebook Gamer Lenovo Gaming3i",
+            "productName": "Lenovo Gaming3i",
             "photo": "https://elenex.vercel.app/images/Lenovo-ideapad-gaming.png",
             "price": 3.599
         },
@@ -109,7 +109,7 @@
             "id": 14,
             "category": "Notbook",
             "brand": "Apple",
-            "productName": "MacBook Pro 13",
+            "productName": "MacBook Pro 14",
             "photo": "https://elenex.vercel.app/images/MacBook-PRO-14.png",
             "price": 14.699
         },

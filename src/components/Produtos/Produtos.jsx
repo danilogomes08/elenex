@@ -12,14 +12,32 @@ import './Produtos.scss'
 
 const Produtos = props => {
 
-    const [dados, setDados] = useState([])
+    const [dados, setDados] = useState([]);
+    const [filter, setFilter] = useState([]);
     const URL = 'https://elenex.vercel.app/produtos.json'
 
-    useEffect( () => {
+    const AllProducts = () => {
         Axios.get(URL) 
-             .then((resp) => {
-                 setDados(resp.data.products)
-             })    
+        .then((resp) => {
+            setDados(resp.data.products)
+        })  
+    }
+
+    // const filterProducts = () => {
+    //     Axios.get(URL) 
+    //     .then((resp) => {
+    //         resp.data.products.filter(item => item.category === "Smartphone")
+    //         .map(filteredProducts => (
+    //             setFilter(filteredProducts)
+    //         ))
+    //     }) 
+    // }
+
+    console.log(filter)
+    
+    useEffect( () => {
+        AllProducts()
+        // filterProducts()
      }, [])
 
      
@@ -29,48 +47,94 @@ const Produtos = props => {
             <h2> {props.titulo} </h2>
 
         <div className="Produtos">
-        <Swiper
+            <Swiper
                 slidesPerView={4}
-        
                 className="Swiper-container"
                 breakpoints={{
                     320: {
-                      width: 320,
-                      slidesPerView: 1,
+                    width: 320,
+                    slidesPerView: 1,
                     },
                     640: {
                         width: 640,
                         slidesPerView: 2,
                     },
-                      960: {
+                    960: {
                         width: 960,
                         slidesPerView: 3,
                     },
                     1280: {
-                      width: 1280,
-                      slidesPerView: 4,
+                    width: 1280,
+                    slidesPerView: 4,
                     },
-                  }}
+                }}
             >
-                {dados.map((item) => (
-                    <SwiperSlide 
-                        key={item.id}
-                    >
-                        <div key={item.id} className="ItemProducts">
-                            <img src={item.photo} />
-                            <h3> {item.productName} </h3>
-                            <p> {item.brand} </p>
-                            <p> R$ {item.price} </p>
-                            <button> 
-                                <Icon.ShoppingCart className="Icon" size="20" stroke-width="1.5" />
-                                Add to Cart
-                            </button>
-                        </div>
-                    </SwiperSlide>
+            {dados.map((item) => (
+                <SwiperSlide 
+                    key={item.id}
+                >
+                    <div key={item.id} className="ItemProducts">
+                        <img src={item.photo} />
+                        <h3> {item.productName} </h3>
+                        <p> {item.brand} </p>
+                        <p> R$ {item.price} </p>
+                        <button> 
+                            <Icon.ShoppingCart className="Icon" size="20" stroke-width="1.5" />
+                            Add to Cart
+                        </button>
+                    </div>
+                </SwiperSlide>
             ))}
-           </Swiper>
+            
+            </Swiper>
 
         </div>
+
+        <div className="Produtos">
+            <Swiper
+                slidesPerView={4}
+                className="Swiper-container"
+                breakpoints={{
+                    320: {
+                    width: 320,
+                    slidesPerView: 1,
+                    },
+                    640: {
+                        width: 640,
+                        slidesPerView: 2,
+                    },
+                    960: {
+                        width: 960,
+                        slidesPerView: 3,
+                    },
+                    1280: {
+                    width: 1280,
+                    slidesPerView: 4,
+                    },
+                }}
+            >
+            {filter.map((item) => (
+                <SwiperSlide 
+                    key={item.id}
+                >
+                    <div key={item.id} className="ItemProducts">
+                        <img src={item.photo} />
+                        <h3> {item.productName} </h3>
+                        <p> {item.brand} </p>
+                        <p> R$ {item.price} </p>
+                        <button> 
+                            <Icon.ShoppingCart className="Icon" size="20" stroke-width="1.5" />
+                            Add to Cart
+                        </button>
+                    </div>
+                </SwiperSlide>
+            ))}
+            
+            </Swiper>
+
+        </div>
+
+
         <hr />
 
             <img src={props.banner} />
