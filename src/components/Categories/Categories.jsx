@@ -26,9 +26,6 @@ const Categories = _ => {
                     <h3> Smartwatch </h3>
                 </div>
 
-            </div>
-
-            <div>
                 <div className="Category">
                     <img src="./images/category04.png" />
                     <h3> Audio </h3>
@@ -38,6 +35,7 @@ const Categories = _ => {
                     <img src="./images/category05.png" />
                     <h3> Notbook </h3>
                 </div>
+
             </div>
 
             <hr />
