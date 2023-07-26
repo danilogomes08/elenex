@@ -16,6 +16,8 @@ function App() {
       <Categories />
       <Produtos 
         titulo="New Products"
+        allProducts={true}
+        qtSlider={4}
       />
       <Banners 
         titulo1="iPhone" subtitulo1="Why buy iPhone anywhere else?" bg1="Banner01"
@@ -23,15 +25,21 @@ function App() {
       />
       <Produtos 
         titulo="Apple"
+        filteredBrand={true}
         banner="./images/banner-central.png"
+        qtSlider={4}
       />
-      <Countdown />
+      <Countdown 
+      
+      />
       <Banners 
         titulo1="Switch" subtitulo1="Find the perfect Nintendo Switch system for you." bg1="Banner03"
         titulo2="Apple Watch" subtitulo2="Get more out of Apple Watch." bg2="Banner04"
       />
       <Produtos 
         titulo="Special Products"
+        allProducts={true}
+        qtSlider={4}
       />
       <Brands />
       <Footer />

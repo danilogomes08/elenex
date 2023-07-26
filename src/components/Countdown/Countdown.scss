@@ -1,0 +1,17 @@
+@import '../../index.scss';
+
+.Sale {
+   max-width: 400px;
+}
+
+.Countdown {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    & .Produtos {
+        max-width: 800px;
+    }
+}
+

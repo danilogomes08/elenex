@@ -12,7 +12,7 @@
         {
             "id": 2,
             "category": "Smartwatch",
-            "brand": " Apple",
+            "brand": "Apple",
             "productName": "Apple Watch SE",
             "photo": "https://elenex.vercel.app/images/Apple-Watch-se-2.png",
             "price": 3.729

@@ -3,8 +3,9 @@
 .Categories {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 50px 0;
+    padding-top: 50px;
     text-align: center;
+    
     & > div {
         display: flex;
         flex-wrap: wrap;
@@ -34,7 +35,7 @@
     }
     & h3 {
         font-size: 1.12rem;
-        color: $cinza-escuro;
+        color: $azul;
         font-weight: 400;
     }
 }

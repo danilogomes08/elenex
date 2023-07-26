@@ -1,20 +1,21 @@
 @import '../../index.scss';
 
 .ProdutosContainer {
-    padding-top: 20px
+    text-align: center;    
+    & h2 {
+        margin-top: 50px;
+        font-weight: 400;
+    }
+    & > img {
+        margin: 50px 0
+    }
 }
-
+   
 .Produtos {
     display: flex;
     max-width: 1200px;
     flex-wrap: wrap;
     margin: 0 auto;
-    justify-content: space-between;
-    text-align: center;
-    align-items: baseline;
-    & h2 {
-       text-align: center; 
-    }
 }
 
 .ItemProducts {
