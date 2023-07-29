@@ -38,7 +38,7 @@ function App() {
       />
       <Produtos 
         titulo="Special Products"
-        allProducts={true}
+        filteredSpecial={true}
         qtSlider={4}
       />
       <Brands />

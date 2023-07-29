@@ -1,17 +1,48 @@
 @import '../../index.scss';
 
 .Sale {
-   max-width: 400px;
+   max-width: 350px;
+   text-align: center;
+   & span {
+    font-size: 10rem
+   }
+   & h2 {
+    font-weight: 400;
+   }
+
 }
 
 .Countdown {
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
     display: flex;
     align-items: center;
-    justify-content: center;
-    & .Produtos {
-        max-width: 800px;
+    justify-content: space-around;
+    & div:last-child {
+        max-width: 850px;
+    }
+    & .ItemProducts {
+        max-width: 400px;
+        & img {
+            width: 200px;
+        }
     }
 }
 
+.Offer {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    & div {
+        border: 2px solid $azul;
+        border-radius: 5px;
+        padding: 10px;
+        margin: 0 10px
+    }
+    & div p:first-child {
+        font-size: 2rem;
+    }
+    & div p:last-child {
+        font-size: 0.7rem;
+    }
+}

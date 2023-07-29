@@ -25,8 +25,6 @@ const Produtos = props => {
         })  
     }
 
-    const filteredRandom = dados.sort(() => Math.random() - 0.5)
-
     const RenderAllProducts = () => {
         
         if(props.allProducts === true) {
@@ -85,14 +83,44 @@ const Produtos = props => {
     }
 
     const RenderFilteredBrand = () => {
+
         const filteredBrand = dados.filter((item) => {
             return item.brand === "Apple"
-        })
+    })
 
         if(props.filteredBrand === true) {
         return (
             <>
                 {filteredBrand.map((item) => (
+                    <SwiperSlide 
+                        key={item.id}
+                    >
+                        <div key={item.id} className="ItemProducts">
+                            <img src={item.photo} />
+                            <h3> {item.productName} </h3>
+                            <p> {item.brand} </p>
+                            <p> R$ {item.price} </p>
+                            <button> 
+                                <Icon.ShoppingCart className="Icon" size="20" stroke-width="1.5" />
+                                Add to Cart
+                            </button>
+                        </div>
+                    </SwiperSlide>
+                ))}
+            </>
+            )
+        }
+    }
+
+    const RenderSpecial = () => {
+        const filteredSpecial = dados.filter((item) => {
+            return item.category === "Notbook" || item.category === "Game" || item.brand === "JBL"
+    })
+
+        if(props.filteredSpecial === true) {
+        return (
+            <>
+                {filteredSpecial.map((item) => (
                     <SwiperSlide 
                         key={item.id}
                     >
@@ -153,6 +181,7 @@ const Produtos = props => {
                 {RenderAllProducts()}
                 {RenderFilteredCategory()}
                 {RenderFilteredBrand()}
+                {RenderSpecial()}
             
             
 
