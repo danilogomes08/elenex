@@ -1,0 +1,72 @@
+@import '../../index.scss';
+
+footer {
+    & > div {
+        max-width: 1200px;
+        padding: 50px 0;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+            & li {
+                margin-bottom: 15px;
+            }
+            & a {
+                color: $cinza-escuro;
+                &:hover {
+                    color: $azul;
+                }
+            }
+            & div {
+            max-width: 950px;
+            & h2 {
+                font-weight: 400;
+                font-size: 1.12rem;
+            }
+        }
+        & .Icon:nth-child(even) {
+            margin: 0 20px;
+        }
+        & .Icon:hover {
+            color: $azul;
+        }
+    }
+}
+    
+.Newsletter {
+    width: 500px;
+    display: flex;  
+    margin: 20px 0;
+    & input {
+        width: 70%;
+        height: 40px;
+        border-radius: 5px 0 0 5px;
+        border: 1px solid $cinza-claro;
+        background-color: $branco;
+        outline: none;
+        padding-left: 15px;
+    }
+    & input::placeholder {
+        font-weight: 500;
+        color: $cinza-escuro;
+        font-size: 1rem;
+    }
+    & button {
+        color: $branco;
+        font-size: 1rem;
+        height: 42px;
+        background-color: $azul;
+        border: 1px solid $azul;
+        border-radius: 5px;
+        cursor: pointer;
+        padding: 0 30px;
+        margin-left: 10px;
+        &:hover {
+            background-color: $cinza-escuro;
+            border-color: $cinza-escuro;
+        } 
+    }
+}
+
+
+

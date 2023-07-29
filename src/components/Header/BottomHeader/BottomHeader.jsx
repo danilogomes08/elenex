@@ -1,4 +1,4 @@
-import react from 'react'
+import React, {useState, useEffect, useRef} from 'react';
 import * as Icon from 'react-feather';
 
 import './BottomHeader.scss'
@@ -11,11 +11,11 @@ const BottomHeader = _ => {
             
             <div className="BottomHeader">
 
-                <button className="MenuCategories">
+                <div className="MenuCategories">
                     <Icon.Menu className="Icon" stroke-width="1.5" />
-                        Categories
+                    <p> Categories </p>
                     <Icon.ChevronDown className="Icon" stroke-width="1.5" />
-                </button>
+                </div>
 
                 <ul>
 

@@ -189,8 +189,6 @@ const Produtos = props => {
 
         </div>
 
-        <hr />
-
         { props.banner ? <img src={props.banner} /> : null }
 
         </section>

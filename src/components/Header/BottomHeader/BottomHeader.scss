@@ -32,12 +32,10 @@
     border-radius: 5px 5px 0 0;
     cursor: pointer;
     &:hover {
-        background-color: $cinza-escuro;;
+        background-color: $cinza-escuro;
     }
-    & .Icon:first-child {
-        padding-right: 50px;
-    }
-    & .Icon:last-child {
-        padding-left: 50px;
+    & > p {
+        margin: 0 50px;
     }
 }
+

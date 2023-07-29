@@ -38,8 +38,6 @@ const Categories = _ => {
 
             </div>
 
-            <hr />
-
         </section>
     )
 }

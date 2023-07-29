@@ -35,12 +35,12 @@ const Countdown = props => {
                 <div className="Offer">
 
                     <div>
-                        <p> {minutes} </p>
+                        <p> {minutes.toString().padStart(2, "0")} </p>
                         <p> MINS </p>
                     </div>
 
                     <div>
-                        <p> {seconds} </p>
+                        <p> {seconds.toString().padStart(2, "0")} </p>
                         <p> SECS </p>
                     </div>
 
