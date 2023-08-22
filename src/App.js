@@ -20,8 +20,8 @@ function App() {
         qtSlider={4}
       />
       <Banners 
-        titulo1="iPhone" subtitulo1="Why buy iPhone anywhere else?" bg1="Banner01"
-        titulo2="AirPods" subtitulo2="A magical connection to your devices." bg2="Banner02"
+        titulo1="iPhone" subtitulo1="Why buy iPhone anywhere else?" img1="./images/banner01.png"
+        titulo2="AirPods" subtitulo2="A magical connection to your devices." img2="./images/banner02.png"
       />
       <Produtos 
         titulo="Apple"
@@ -33,15 +33,14 @@ function App() {
       
       />
       <Banners 
-        titulo1="Switch" subtitulo1="Find the perfect Nintendo Switch system for you." bg1="Banner03"
-        titulo2="Apple Watch" subtitulo2="Get more out of Apple Watch." bg2="Banner04"
+        titulo1="Switch" subtitulo1="Find the perfect Nintendo Switch system for you." img1="./images/banner03.png"
+        titulo2="Apple Watch" subtitulo2="Get more out of Apple Watch." img2="./images/banner04.png"
       />
       <Produtos 
         titulo="Special Products"
         filteredSpecial={true}
         qtSlider={4}
       />
-      <Brands />
       <Footer />
     </div>
   )

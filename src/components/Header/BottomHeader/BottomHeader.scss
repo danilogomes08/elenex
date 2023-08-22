@@ -38,4 +38,27 @@
         margin: 0 50px;
     }
 }
+.Dropdown {
+    position: relative;
 
+}
+
+.MenuDropdown {
+    position: absolute;
+    width: 266px;
+    padding: 5px 0;
+    background-color: $branco;
+    display: flex;
+    flex-direction: column;
+    top: 48px;
+    left: 0;
+    & li {
+        text-align: left;
+        padding: 10px 0;
+        & hr {
+            margin-top: 10px;
+            max-width: 90%;
+        }
+    } 
+
+}

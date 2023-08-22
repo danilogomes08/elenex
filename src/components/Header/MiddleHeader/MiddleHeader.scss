@@ -49,3 +49,24 @@ header input::placeholder {
     cursor: pointer;
     padding: 0 40px;
 }
+
+.IconsMiddle {
+    display: flex;
+    align-items: center;
+    & div {
+        display: flex;
+        flex-direction: column;
+        & .Cart {
+            background-color: $azul;
+            color: $branco;
+            width: 10px;
+            height: 10px;
+            padding: 10px;
+            text-align: center;
+            border-radius: 100%;
+            margin: -10px 10px;
+            font-size: 0.8rem;
+            z-index: 1;
+        }
+    }
+}

@@ -1,0 +1,13 @@
+@import '../../index.scss';
+
+.BrandsContainer {
+    max-width: 1200px;
+    margin: 50px auto;
+}
+
+ .Brands {
+    max-width: 250px;
+    & img {
+        width: 250px;
+    }
+}
