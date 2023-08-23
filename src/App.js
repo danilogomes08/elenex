@@ -7,9 +7,16 @@ import Countdown from './components/Countdown/Countdown'
 import Brands from './components/Brands/Brands'
 import Footer from './components/Footer/Footer'
 
+import React, { useState } from 'react';
+import { Cart } from './components/Cart'
+
 
 function App() {
+
+  const [cart, setCart] = useState(0);
+
   return (
+    <Cart.Provider value={[cart, setCart]}>
     <div>
       <Header />
       <Main />
@@ -43,6 +50,7 @@ function App() {
       />
       <Footer />
     </div>
+    </Cart.Provider >
   )
 }
 

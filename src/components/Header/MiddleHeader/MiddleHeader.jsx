@@ -1,10 +1,12 @@
-import react, {useState} from 'react'
+import react, {useState, useContext} from 'react'
 import * as Icon from 'react-feather';
 import './MiddleHeader.scss'
+import { Cart } from '../../Cart'
+
 
 const MiddleHeader = props => {
 
-    const [cart, setCart] = useState(0)
+    const [cart, setCart] = useContext(Cart)
 
     return(
         <div className="MiddleHeader">

@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useContext  } from 'react'
+import { Cart } from '../Cart'
 
 import * as Icon from 'react-feather';
 import Axios from "axios";
@@ -16,6 +17,7 @@ const Produtos = props => {
 
     const [dados, setDados] = useState([]);
     const [random, setRandom] = useState([]);
+    const [cart, setCart] = useContext(Cart)
     const URL = 'https://elenex.vercel.app/produtos.json'
 
     const getProducts = () => {
@@ -23,6 +25,10 @@ const Produtos = props => {
         .then((resp) => {
             setDados(resp.data.products)
         })  
+    }
+
+    const addCart = () => {
+        setCart(cart + 1)
     }
 
     const RenderAllProducts = () => {
@@ -39,7 +45,7 @@ const Produtos = props => {
                                 <h3> {item.productName} </h3>
                                 <p> {item.brand} </p>
                                 <p> R$ {item.price} </p>
-                                <button> 
+                                <button onClick={addCart}> 
                                     <Icon.ShoppingCart className="Icon" size="20" stroke-width="1.5" />
                                     Add to Cart
                                 </button>
@@ -69,7 +75,7 @@ const Produtos = props => {
                                 <h3> {item.productName} </h3>
                                 <p> {item.brand} </p>
                                 <p> R$ {item.price} </p>
-                                <button> 
+                                <button onClick={addCart}> 
                                     <Icon.ShoppingCart className="Icon" size="20" stroke-width="1.5" />
                                     Add to Cart
                                 </button>
@@ -100,7 +106,7 @@ const Produtos = props => {
                             <h3> {item.productName} </h3>
                             <p> {item.brand} </p>
                             <p> R$ {item.price} </p>
-                            <button> 
+                            <button onClick={addCart}> 
                                 <Icon.ShoppingCart className="Icon" size="20" stroke-width="1.5" />
                                 Add to Cart
                             </button>
@@ -129,7 +135,7 @@ const Produtos = props => {
                             <h3> {item.productName} </h3>
                             <p> {item.brand} </p>
                             <p> R$ {item.price} </p>
-                            <button> 
+                            <button onClick={addCart}> 
                                 <Icon.ShoppingCart className="Icon" size="20" stroke-width="1.5" />
                                 Add to Cart
                             </button>
@@ -195,4 +201,5 @@ const Produtos = props => {
     )
 }
 
-export default Produtos
+export default Produtos;
+
