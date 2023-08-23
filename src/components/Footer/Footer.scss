@@ -2,26 +2,25 @@
 
 footer {
     & > div {
-        max-width: 1200px;
+        @include container;
         padding: 50px 0;
-        margin: 0 auto;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-            & li {
-                margin-bottom: 15px;
+        & li {
+            margin-bottom: 15px;
+        }
+        & a {
+            color: $cinza-escuro;
+            &:hover {
+                color: $azul;
             }
-            & a {
-                color: $cinza-escuro;
-                &:hover {
-                    color: $azul;
-                }
-            }
-            & div {
+        }
+        & div {
             max-width: 950px;
             & h2 {
                 font-weight: 400;
                 font-size: 1.12rem;
+            }
+            @include device(750px) {
+                margin-bottom: 20px;
             }
         }
         & .Icon:nth-child(even) {
@@ -30,6 +29,11 @@ footer {
         & .Icon:hover {
             color: $azul;
         }
+        @include device(750px) {
+            flex-direction: column-reverse;
+            padding: 20px 10px;
+            text-align: center;
+        }
     }
 }
     
@@ -37,6 +41,10 @@ footer {
     width: 500px;
     display: flex;  
     margin: 20px 0;
+    @include device(750px) {
+        width: 400px;
+        margin: 20px auto;
+    }
     & input {
         width: 70%;
         height: 40px;

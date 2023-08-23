@@ -6,11 +6,16 @@
     margin: 50px auto 0 auto;
     justify-content: space-between;
     color: $cinza-escuro;
+    flex-wrap: wrap;
     & div {
         width: 580px;
         text-align: center;
         background-color: $cinza-claro;
         cursor: pointer;
+        @include device(750px) {
+            width: 450px;
+            margin: 10px auto;
+        }
         & h2 {
             font-size: 1.12rem;
             font-weight: 400;
@@ -21,6 +26,9 @@
         }
         & img {
             margin-bottom: -3px;
+            @include device(750px) {
+                width: 450px;
+            }
         }
     }
 }

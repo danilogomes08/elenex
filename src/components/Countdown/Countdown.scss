@@ -13,10 +13,7 @@
 }
 
 .Countdown {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
+    @include container;
     justify-content: space-around;
     & div:last-child {
         max-width: 850px;
