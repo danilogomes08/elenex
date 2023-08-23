@@ -11,12 +11,30 @@
         cursor: pointer;
     }
 }
-   
+
 .Produtos {
     display: flex;
     max-width: 1200px;
     flex-wrap: wrap;
     margin: 0 auto;
+}
+
+.Swiper-container {
+    @include produtos(300px) {
+        width: 300px;
+    }
+
+    @include produtos(600px) {
+        width: 600px;
+    }
+
+    @include produtos(900px) {
+        width: 900px;
+    }
+
+    @include produtos(1200px) {
+        width: 1200px;
+    }
 }
 
 .ItemProducts {

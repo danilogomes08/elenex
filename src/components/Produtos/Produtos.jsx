@@ -165,20 +165,20 @@ const Produtos = props => {
                 navigation={true}
                 className="Swiper-container"
                 breakpoints={{
-                    320: {
-                    width: 320,
+                    300: {
+                    width: 300,
                     slidesPerView: 1,
                     },
-                    640: {
-                        width: 640,
+                    600: {
+                        width: 600,
                         slidesPerView: 2,
                     },
-                    960: {
-                        width: 960,
+                    900: {
+                        width: 900,
                         slidesPerView: 3,
                     },
-                    1280: {
-                    width: 1280,
+                    1200: {
+                    width: 1200,
                     slidesPerView: props.qtSlider,
                     },
                 }}
