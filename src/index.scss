@@ -26,3 +26,17 @@ hr {
   margin: 0 auto;
 }
 
+@mixin container {
+  max-width: 1200px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+@mixin device($size) {
+  @media screen and (max-width: $size) {
+      @content;
+  }
+}

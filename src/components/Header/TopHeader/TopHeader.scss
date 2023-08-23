@@ -1,22 +1,23 @@
 @import '../../../index.scss';
 
 .TopHeader {
+    @include container;
     padding: 10px 0;
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
     font-size: 14px;
     color: $cinza-escuro;
     & p:nth-child(2) {
         color: $azul;
+        @include device(750px) {
+            margin: 15px 0;
+        }
     }
     & .Icon:nth-child(even) {
         margin: 0 20px;
     }
     & .Icon:hover {
         color: $azul;
+    }
+    @include device(750px) {
+        flex-direction: column;
     }
 }

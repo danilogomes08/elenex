@@ -22,7 +22,8 @@ const BottomHeader = _ => {
                         <Icon.Menu className="Icon" stroke-width="1.5" />
                         <p> Categories </p>
                         <Icon.ChevronDown className="Icon" stroke-width="1.5" />
-                        {open ? 
+                    </button>
+                    {open ? 
                             <ul className="MenuDropdown">
                                 <li>
                                     <a href="#"> Smartphone </a>
@@ -45,8 +46,7 @@ const BottomHeader = _ => {
                                     <hr />
                                 </li>
                             </ul>
-                        : null}
-                    </button>
+                    : null}
                 </div>
 
                 <ul>
