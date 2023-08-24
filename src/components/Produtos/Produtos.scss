@@ -9,6 +9,20 @@
     & > img {
         margin: 50px 0;
         cursor: pointer;
+        max-width: 100%;
+        height: auto;
+    }
+    & .BannerDesktop {
+        @include device (700px) {
+            display: none;
+        }
+    }
+    & .BannerMobile {
+        display: none;
+        @include device (700px) {
+            display: block;
+            margin: 50px auto;
+        }
     }
 }
 

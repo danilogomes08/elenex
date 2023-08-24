@@ -157,45 +157,46 @@ const Produtos = props => {
             
             <h2> {props.titulo} </h2>
 
-        <div className="Produtos">
-            <Swiper
-                slidesPerView={props.qtSlider}
-                loop={true}
-                modules={[Pagination, Navigation]}
-                navigation={true}
-                className="Swiper-container"
-                breakpoints={{
-                    300: {
-                    width: 300,
-                    slidesPerView: 1,
-                    },
-                    600: {
-                        width: 600,
-                        slidesPerView: 2,
-                    },
-                    900: {
-                        width: 900,
-                        slidesPerView: 3,
-                    },
-                    1200: {
-                    width: 1200,
-                    slidesPerView: props.qtSlider,
-                    },
-                }}
-            >
-            
-                {RenderAllProducts()}
-                {RenderFilteredCategory()}
-                {RenderFilteredBrand()}
-                {RenderSpecial()}
-            
-            
+            <div className="Produtos">
+                <Swiper
+                    slidesPerView={props.qtSlider}
+                    loop={true}
+                    modules={[Pagination, Navigation]}
+                    navigation={true}
+                    className="Swiper-container"
+                    breakpoints={{
+                        300: {
+                        width: 300,
+                        slidesPerView: 1,
+                        },
+                        600: {
+                            width: 600,
+                            slidesPerView: 2,
+                        },
+                        900: {
+                            width: 900,
+                            slidesPerView: 3,
+                        },
+                        1200: {
+                        width: 1200,
+                        slidesPerView: props.qtSlider,
+                        },
+                    }}
+                >
+                
+                    {RenderAllProducts()}
+                    {RenderFilteredCategory()}
+                    {RenderFilteredBrand()}
+                    {RenderSpecial()}
+                
+                
 
-            </Swiper>
+                </Swiper>
 
-        </div>
+            </div>
 
-        { props.banner ? <img src={props.banner} /> : null }
+            { props.bannerDesktop ? <img src={props.bannerDesktop} className="BannerDesktop" /> : null }
+            { props.bannerMobile ? <img src={props.bannerMobile} className="BannerMobile" /> : null }
 
         </section>
     )

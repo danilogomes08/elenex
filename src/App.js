@@ -4,7 +4,6 @@ import Categories from './components/Categories/Categories'
 import Produtos from './components/Produtos/Produtos'
 import Banners from './components/Banners/Banners'
 import Countdown from './components/Countdown/Countdown'
-import Brands from './components/Brands/Brands'
 import Footer from './components/Footer/Footer'
 
 import React, { useState } from 'react';
@@ -37,7 +36,8 @@ function App() {
         <Produtos 
           titulo="Apple"
           filteredBrand={true}
-          banner="./images/banner-central.png"
+          bannerDesktop="./images/banner-central.png"
+          bannerMobile="./images/banner-central-mobile.png"
           qtSlider={4}
         />
         <Countdown />
