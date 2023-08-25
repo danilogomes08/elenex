@@ -9,7 +9,7 @@ main {
     background-size: cover;
     @include device(700px) {
         background: url(../../../bg-top-mobile.png) center;
-        background-size: cover;
+        background-size: contain;
         background-repeat: no-repeat;
         height: 100vh;
     }
