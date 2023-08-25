@@ -7,6 +7,9 @@ main {
     background-repeat: no-repeat;
     text-align: center;
     padding-top: 100px;
+    @include device(700px) {
+        background: url(../../../bg-top-mobile.png) center;
+    }
     & p {
         font-size: 1.12rem;
         color: $cinza-escuro;

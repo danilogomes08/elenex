@@ -29,8 +29,9 @@
 .Produtos {
     display: flex;
     max-width: 1200px;
-    flex-wrap: wrap;
     margin: 0 auto;
+    align-items: center;
+    justify-content: center;
 }
 
 .Swiper-container {
@@ -52,7 +53,7 @@
 }
 
 .ItemProducts {
-    max-width: 250px;
+    max-width: 300px;
     align-items: baseline;
     margin-bottom: 50px;
     & p:nth-child(odd) {
