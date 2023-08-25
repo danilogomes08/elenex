@@ -1,14 +1,16 @@
 @import '../../index.scss';
 
 main {
-    background: url(../../../bg-top.png) center;
+    background: url(../../../bg-top.png) center center;
     height: 100vh;
-    background-size: cover;
     background-repeat: no-repeat;
     text-align: center;
     padding-top: 100px;
+    background-size: cover;
     @include device(700px) {
         background: url(../../../bg-top-mobile.png) center;
+        background-size: cover;
+        background-repeat: no-repeat;
     }
     & p {
         font-size: 1.12rem;
