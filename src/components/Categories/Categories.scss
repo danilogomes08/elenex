@@ -5,12 +5,14 @@
     margin: 0 auto;
     padding-top: 50px;
     text-align: center;
-    
     & > div {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         margin: 20px 0;
+        @include device(700px) {
+            justify-content: center
+        }
     }
     & h2 {
         font-size: 1.5rem;
