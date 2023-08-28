@@ -71,3 +71,10 @@
     } 
 
 }
+
+.MenuDestkop {
+    @include device(800px) {
+        display: none;
+    }
+}
+

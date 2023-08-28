@@ -13,7 +13,7 @@ const BottomHeader = _ => {
 
     return(
 
-        <div>
+        <nav>
             
             <div className="BottomHeader">
 
@@ -25,43 +25,38 @@ const BottomHeader = _ => {
                     </button>
                     {open ? 
                             <ul className="MenuDropdown">
-                                <li>
-                                    <a href="#"> Smartphone </a>
+                                <li> <a href="#"> Smartphone </a>
                                     <hr />
                                 </li>
-                                <li>
-                                    <a href="#"> Gamer </a>
+                                <li> <a href="#"> Gamer </a>
                                     <hr />
                                 </li>
-                                <li>
-                                    <a href="#"> Smartwatch </a>
+                                <li>  <a href="#"> Smartwatch </a>
                                     <hr />
                                 </li>
-                                <li>
-                                    <a href="#"> Audio </a>
+                                <li> <a href="#"> Audio </a>
                                     <hr />
                                 </li>
-                                <li>
-                                    <a href="#"> Notbook </a>
+                                <li> <a href="#"> Notbook </a>
                                     <hr />
                                 </li>
                             </ul>
                     : null}
                 </div>
-
-                <ul>
-
-                    <li><a href="#"> Home </a></li>
-                    <li><a href="#"> Delivery </a></li>
-                    <li><a href="#"> Payment </a></li>
-                    <li><a href="#"> Contacts </a></li>
-                    <li><a href="#"> FAQ </a></li>
-
-                </ul>                
+                
+                <div className="MenuDestkop">
+                    <ul>   
+                        <li><a href="#"> Home </a></li>
+                        <li><a href="#"> Delivery </a></li>
+                        <li><a href="#"> Payment </a></li>
+                        <li><a href="#"> Contacts </a></li>
+                        <li><a href="#"> FAQ </a></li>
+                    </ul>
+                </div>                
             </div>
 
             <hr />
-        </div>
+        </nav>
     )
 }
 

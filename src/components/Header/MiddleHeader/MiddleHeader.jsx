@@ -7,6 +7,11 @@ import { Cart } from '../../Cart'
 const MiddleHeader = props => {
 
     const [cart, setCart] = useContext(Cart)
+    const [active, setActive] = useState(false);
+
+    const toggleMenu = () => {
+        setActive(!active);
+    }
 
     return(
         <div className="MiddleHeader">
@@ -20,14 +25,42 @@ const MiddleHeader = props => {
                 </button>
             </div>
 
-            <div className="IconsMiddle">
-                <Icon.User className="Icon" stroke-width="1.5" />
 
-                <Icon.Heart className="Icon" stroke-width="1.5" />
-                
-                <div>
-                    <p class="Cart"> {cart} </p>
-                    <Icon.ShoppingCart className="Icon" stroke-width="1.5" />
+            <div>
+                <nav className="Navbar">
+                    <div className={active ? 'Active Nav-menu' : 'Nav-menu'}>
+                        <ul>   
+                            <li className="Nav-item"><a href="#"> Home </a></li>
+                            <li className="Nav-item"><a href="#"> Delivery </a></li>
+                            <li className="Nav-item"><a href="#"> Payment </a></li>
+                            <li className="Nav-item"><a href="#"> Contacts </a></li>
+                            <li className="Nav-item"><a href="#"> FAQ </a></li>
+                        </ul> 
+                        <div className="Hamburger Active" onClick={toggleMenu}>
+                            <span className="Bar"></span>
+                            <span className="Bar"></span>
+                            <span className="Bar"></span>
+                            <span className="Bar"></span>
+                        </div>
+                    </div>
+                    <div className={active ? 'Active Hamburger' : 'Hamburger'} onClick={toggleMenu}>
+                        <span className="Bar"></span>
+                        <span className="Bar"></span>
+                        <span className="Bar"></span>
+                        <span className="Bar"></span>
+                    </div>
+                </nav>
+
+                <div className="IconsMiddle"> 
+                    
+                    <Icon.User className="Icon" stroke-width="1.5" />
+
+                    <Icon.Heart className="Icon" stroke-width="1.5" />
+                    
+                    <div>
+                        <p class="Cart"> {cart} </p>
+                        <Icon.ShoppingCart className="Icon" stroke-width="1.5" />
+                    </div>
                 </div>
             </div>
 

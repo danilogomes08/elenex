@@ -12,9 +12,20 @@
             color: $cinza-escuro;
         }
     }
-    @include device(950px) {
+    @include device(1000px) {
         justify-content: center;
         padding: 20px 10px
+    }
+    & div:last-child {
+        @include device(900px) {
+            display: flex;
+            align-items: center;
+        }
+        & .Navbar {
+            @include device(900px) {
+                margin-right: 20px;
+            }
+        }
     }
 }
 
@@ -23,7 +34,7 @@
     width: 600px;
     align-items: center;
     display: flex;
-    @include device(950px) {
+    @include device(900px) {
         margin: 15px 0;
     }
     & input {
@@ -55,6 +66,9 @@ header input::placeholder {
 .IconsMiddle {
     display: flex;
     align-items: center;
+    @include device (900px) {
+        margin-left: 20px;
+    }
     & div {
         display: flex;
         flex-direction: column;
@@ -70,5 +84,79 @@ header input::placeholder {
             font-size: 0.8rem;
             z-index: 1;
         }
+    }
+}
+
+.Hamburger {
+    display: none;
+}
+
+.Bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 2px auto;
+    transition: all 0.3s ease-in-out;
+    background-color: $azul;
+}
+
+@media only screen and (min-width: 900px) {
+    .Nav-menu {
+        display: none
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .Nav-menu {
+        position: absolute;
+        left: -100%;
+        top: 0;
+        flex-direction: column;
+        background-color: $branco;
+        width: 80%;
+        height: 100%;
+        justify-content: center;
+        text-align: left;
+        transition: all .7s ease-in-out;
+        z-index: 3;
+        box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.13);
+        & > .Hamburger {
+            position: absolute;
+            left: 90%;
+            top: 20px;
+        }
+    }
+
+    .Nav-menu.Active {
+        left: 0
+    }
+
+    .Nav-item {
+        margin: 20px 10px;
+        & a {
+            color: $azul;
+        }
+    }
+
+    .Nav-item a {
+        font-size: 1.5rem;
+    }
+
+    .Hamburger {
+        cursor: pointer;
+        flex-direction: column;
+    }
+
+    .Hamburger.Active .Bar:nth-child(2),
+    .Hamburger.Active .Bar:nth-child(4) {
+        opacity: 0;
+    }
+
+    .Hamburger.Active .Bar:nth-child(1) {
+        transform: translateY(10px) rotate(45deg);
+    }
+
+    .Hamburger.Active .Bar:nth-child(3) {
+        transform: translateY(-5px) rotate(-45deg);
     }
 }
