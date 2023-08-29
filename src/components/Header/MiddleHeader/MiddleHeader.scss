@@ -108,7 +108,7 @@ header input::placeholder {
 
 @media only screen and (max-width: 900px) {
     .Nav-menu {
-        position: absolute;
+        position: fixed;
         left: -100%;
         top: 0;
         flex-direction: column;
@@ -124,6 +124,18 @@ header input::placeholder {
             position: absolute;
             left: 90%;
             top: 20px;
+        }
+    }
+
+    .NavbarSocial {
+        text-align: center;
+        margin-top: 50px;
+        & > div {
+            margin-top: 10px;
+            justify-content: center;
+        }
+        & p {
+            font-size: 1.2rem;
         }
     }
 

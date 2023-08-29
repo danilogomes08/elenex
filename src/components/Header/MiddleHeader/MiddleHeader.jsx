@@ -36,6 +36,20 @@ const MiddleHeader = props => {
                             <li className="Nav-item"><a href="#"> Contacts </a></li>
                             <li className="Nav-item"><a href="#"> FAQ </a></li>
                         </ul> 
+
+                        <div className="NavbarSocial">
+
+                                <p> Follow Us </p>
+                            
+                            <div>
+                            <Icon.Facebook className="Icon" size="20" stroke-width="1.5" />
+
+                            <Icon.Instagram className="Icon" size="20" stroke-width="1.5"/>
+
+                            <Icon.Twitter className="Icon" size="20" stroke-width="1.5"/>
+                            </div>
+                        </div>
+
                         <div className="Hamburger Active" onClick={toggleMenu}>
                             <span className="Bar"></span>
                             <span className="Bar"></span>
@@ -43,7 +57,7 @@ const MiddleHeader = props => {
                             <span className="Bar"></span>
                         </div>
                     </div>
-                    <div className={active ? 'Active Hamburger' : 'Hamburger'} onClick={toggleMenu}>
+                    <div className="Hamburger" onClick={toggleMenu}>
                         <span className="Bar"></span>
                         <span className="Bar"></span>
                         <span className="Bar"></span>

@@ -5,10 +5,13 @@
     padding: 10px 0;
     font-size: 14px;
     color: $cinza-escuro;
+    @include device(750px) {
+        padding: 10px 0 5px 0;
+    }
     & p:nth-child(2) {
         color: $azul;
         @include device(750px) {
-            margin: 15px 0;
+            margin: 5px 0;
         }
     }
     & .Icon:nth-child(even) {
@@ -19,5 +22,10 @@
     }
     @include device(750px) {
         flex-direction: column;
+    }
+    & div {
+        @include device(750px) {
+            display: none;
+        }
     }
 }
