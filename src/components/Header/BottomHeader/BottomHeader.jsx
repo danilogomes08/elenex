@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useRef} from 'react';
 import * as Icon from 'react-feather';
 
 import './BottomHeader.scss'
@@ -6,6 +6,7 @@ import './BottomHeader.scss'
 const BottomHeader = _ => {
 
     const [open, setOpen] = useState(false);
+    const newRef = useRef(null);
 
     const handleOpen = () => {
         setOpen(!open);

@@ -1,3 +1,7 @@
+import React, { useState, useRef, useEffect } from 'react';
+
+import { Cart } from './components/Cart'
+
 import Header from './components/Header/Header'
 import Main from './components/Main/Main'
 import Categories from './components/Categories/Categories'
@@ -6,16 +10,12 @@ import Banners from './components/Banners/Banners'
 import Countdown from './components/Countdown/Countdown'
 import Footer from './components/Footer/Footer'
 
-import React, { useState } from 'react';
-import { Cart } from './components/Cart'
-
-
 function App() {
 
   const [cart, setCart] = useState(0);
 
   return (
-    <Cart.Provider value={[cart, setCart]}>
+    <Cart.Provider value={[cart, setCart]} >
       <div>
         <Header />
         <Main />

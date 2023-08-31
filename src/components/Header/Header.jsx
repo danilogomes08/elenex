@@ -4,7 +4,7 @@ import TopHeader from './TopHeader/TopHeader'
 import MiddleHeader from './MiddleHeader/MiddleHeader'
 import BottomHeader from './BottomHeader/BottomHeader'
 
-const Header = _ => {
+const Header = props => {
 
     return (
         <header>

@@ -1,20 +1,34 @@
-import react, {useState, useContext} from 'react'
+import react, {useState, useContext, useRef, useEffect} from 'react'
 import * as Icon from 'react-feather';
 import './MiddleHeader.scss'
 import { Cart } from '../../Cart'
-
 
 const MiddleHeader = props => {
 
     const [cart, setCart] = useContext(Cart)
     const [active, setActive] = useState(false);
 
+    const newRef = useRef(null);
+
+    const handleOutsideClick = (e) => {
+      if (newRef.current && !newRef.current.contains(e.target)) {
+          setActive(false);
+      }
+    };
+  
+    useEffect(() => {
+      document.addEventListener("mousedown", handleOutsideClick);
+      return () => {
+          document.removeEventListener("mousedown", handleOutsideClick);
+        };
+    })
+    
     const toggleMenu = () => {
         setActive(!active);
     }
 
     return(
-        <div className="MiddleHeader">
+        <div className="MiddleHeader" ref={newRef}>
 
             <img src="../../images/elenex-logo.svg" />
 

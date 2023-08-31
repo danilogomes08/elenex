@@ -1,8 +1,10 @@
-import react from 'react'
+import reac, {useRef} from 'react'
 import * as Icon from 'react-feather';
 import './TopHeader.scss'
 
 const TopHeader = _ => {
+
+    const newRef = useRef(null);
 
     return(
         <div>
