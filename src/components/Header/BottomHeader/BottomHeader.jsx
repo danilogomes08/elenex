@@ -1,4 +1,4 @@
-import React, {useState, useRef} from 'react';
+import React, {useState, useRef, useEffect} from 'react';
 import * as Icon from 'react-feather';
 
 import './BottomHeader.scss'
@@ -8,13 +8,26 @@ const BottomHeader = _ => {
     const [open, setOpen] = useState(false);
     const newRef = useRef(null);
 
+    const handleOutsideClick = (e) => {
+        if (newRef.current && !newRef.current.contains(e.target)) {
+            setOpen(false);
+        }
+      };
+    
+      useEffect(() => {
+        document.addEventListener("mousedown", handleOutsideClick);
+        return () => {
+            document.removeEventListener("mousedown", handleOutsideClick);
+          };
+      })
+
     const handleOpen = () => {
         setOpen(!open);
       };
 
     return(
 
-        <nav>
+        <nav ref={newRef}>
             
             <div className="BottomHeader">
 

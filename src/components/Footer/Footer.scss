@@ -38,11 +38,9 @@ footer {
 }
     
 .Newsletter {
-    width: 500px;
     display: flex;  
     margin: 20px 0;
     @include device(750px) {
-        width: 400px;
         margin: 20px auto;
     }
     & input {
